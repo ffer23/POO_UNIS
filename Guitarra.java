@@ -1,11 +1,11 @@
 package unidade_1;
 
-////declaração da classe
+//declaração da classe
 
       private string numeroSerie, fabricante, modelo, tipo, madeira;
       private double preço;
 
-////criação do construtor da classe guitarra
+//criação do construtor da classe guitarra
 
   public Guitarra(
               string numeroSerie, string fabricante,
@@ -55,21 +55,23 @@ package unidade_1;
   public void setPreço(double preço){
       this.preço = preço;
       }
-////o método main() é o método principal da classe
+//o método main() é o método principal da classe
 
   public static void main(String[] args){
 
-  ////instanciamos um objeto chamado "minhaGuitarra" que será do tipo "Guitarra"
-  ////Os valores passados são usados pelo construtor da classe para criar o objeto
+  //instanciamos um objeto chamado "minhaGuitarra" que será do tipo "Guitarra"
+  //Os valores passados são usados pelo construtor da classe para criar o objeto
 
-      Guitarra minhaGuitarra = new Guitarra("0605710", "fender", "telecaster", "eletrica", "mogno", 2000);
+      Guitarra minhaGuitarra = new Guitarra("0605710", "Fender", "Telecaster", "Elétrica", "Mogno", 2000);
 
-  ////Testando os dados da classe, imprimindo a saída simples no terminal
+  //Testando os dados da classe, imprimindo a saída simples no terminal
 
-  system.out.println(minhaGuitarra.getNumeroSerie());
-  system.out.println(minhaGuitarra.getMadeira());
-  system.out.println(minhaGuitarra.getPreço());
-  system.out.println(minhaGuitarra.getTipo());
+  System.out.println(minhaGuitarra.getNumeroSerie());
+  System.out.println(minhaGuitarra.getFabricante());
+  System.out.println(minhaGuitarra.getModelo());
+  System.out.println(minhaGuitarra.getMadeira());
+  System.out.println(minhaGuitarra.getPreco());
+  System.out.println(minhaGuitarra.getTipo());
   }
 
  }
